@@ -1,0 +1,22 @@
+{
+  "name": "websites",
+  "version": "0.0.0",
+  "description": "180 websites en 180 dias",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages-deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yeion7/websites.git"
+  },
+  "author": "@yeion7",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/yeion7/websites/issues"
+  },
+  "devDependencies": {
+    "gh-pages-deploy": "~0.4.2"
+  }
+}
