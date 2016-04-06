@@ -1,3 +1,5 @@
+*
+  box-sizing border-box
 body {
   color: #5f5f5f;
   font-family: sans-serif;
@@ -58,4 +60,7 @@ body {
 .current-link {
   margin-top: 20px;
   font-size: 2em;
+}
+.websites {
+  align-items: flex-start;
 }
