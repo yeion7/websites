@@ -17,7 +17,7 @@ El proyecto, consiste en tomar cada uno de los websites que realizo Jennifer Dew
 Para participar lo unico que debes hacer es un **fork** de este repositorio, luego:
 * Clonar el repositorio a tu computador `git clone [link del repositorio]`
 * Modifica el **package.json** con tus datos
-* Ejecuta en la termina `npm install`
+* Ejecuta en la terminal `npm install`
 * Ejecuta `npm run deploy` para publicar en github pages
 
 ## Como colaborar
