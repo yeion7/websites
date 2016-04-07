@@ -5,6 +5,6 @@ Este proyecto, consiste en realizar 180 websites en 180 dias, es inspirado en el
 # indicaciones
 
 * Clona el repositorio
-* Modifica el *package.json* con tus datos
-* Ejecuta 'npm install'
-* Ejecuta 'npm run deploy para publicar en github pages'
+* Modifica el **package.json** con tus datos
+* Ejecuta `npm install`
+* Ejecuta `npm run deploy` para publicar en github pages'
