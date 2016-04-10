@@ -42,9 +42,37 @@ body {
 }
 .app {
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
+  height: 350px;
   padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.week {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.day {
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.4em;
+}
+@media screen and (min-width: 769px) {
+  .day {
+    font-size: 2em;
+  }
+}
+.today {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.current {
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
