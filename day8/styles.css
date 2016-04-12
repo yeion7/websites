@@ -1,3 +1,4 @@
+@import "icomoon/style.css";
 * {
   box-sizing: border-box;
 }
@@ -49,4 +50,11 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.icon {
+  font-size: 4em;
+  cursor: pointer;
+  padding: 0.2em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 0px #edde45;
 }
