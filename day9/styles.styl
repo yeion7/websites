@@ -44,9 +44,59 @@ body
 .app
   width: 100%
   min-height: 50vh
-  height: 300px
+  min-height: 300px
   padding: 15px
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center
+
+
+.explanation-container
+  text-align: center
+
+.game-container
+  width: 100%
+  display: flex;
+  justify-content: center
+  align-items: flex-end;
+  position: relative;
+
+
+.ball
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  background: steelblue
+  position: absolute;
+  cursor: pointer;
+  animation: bounce 20s infinite
+
+
+.messages
+  display: none
+  flex-direction: column;
+  align-items: center;
+
+.continue
+  padding: 1em
+  border-radius: 5px
+  border 1px solid #ccc
+  color #ccc
+  font-weight: bold;
+  cursor: pointer
+  &:hover
+    background: #ccc
+    color white
+
+
+@keyframes bounce
+  0%   {margin-top: 0px; animation-timing-function: ease-in;}
+  12%  {margin-top: 340px; animation-timing-function: ease-out;}
+  25%  {margin-top: 0px; animation-timing-function: ease-in;}
+  37%  {margin-top: 340px; animation-timing-function: ease-out;}
+  49%  {margin-top: 0px; animation-timing-function: ease-in;}
+  61%  {margin-top: 340px; animation-timing-function: ease-out;}
+  75%  {margin-top: 0px; animation-timing-function: ease-in;}
+  87%  {margin-top: 340px; animation-timing-function: ease-out;}
+  100% {margin-top: 0px; animation-timing-function: ease-in;}
