@@ -46,7 +46,7 @@ conti.addEventListener('click', function () {
     messagesContainer.style.display = 'none';
     ball.style.display = 'block';
   } else {
-    level.textContent = 'Ganaste!';
+    levelText.textContent = 'Ganaste!';
     conti.textContent = 'Restaurar';
     ballGame.rest();
   }
