@@ -1,0 +1,75 @@
+*
+  box-sizing: border-box
+
+a
+  text-decoration: none
+body
+  color: white
+  font-family: sans-serif
+  letter-spacing: 2px
+
+header
+  align-items: center
+  border-bottom: 1px solid #ccc
+  display: flex
+  height: 30px
+  justify-content: space-between
+  width: 100%
+
+
+.home
+  color: inherit
+  font-weight: bold
+  margin-left: 10px
+  text-decoration: none
+
+.nav
+  align-items: center
+  border-bottom: 1px solid #ccc
+  display: flex
+  height: 30px
+  justify-content: flex-end
+  width: 100%
+
+  & a
+    color: inherit
+    font-weight: bold
+    margin-left: 10px
+    text-decoration: none
+    &:hover
+      color: orange
+
+.app
+  align-items: center
+  display: flex
+  flex-direction: column
+  justify-content: space-around;
+  min-height: 50vh
+  min-height: 400px
+  padding: 15px
+  width: 100%
+
+.current
+  &-text
+    font-size: 1.5em
+    text-align: center
+
+.clock
+.color
+  display: flex
+  font-size: 5em
+  justify-content: center
+
+.color
+  position: relative
+
+.offset
+  color white;
+  opacity: (0.6)
+  color: rgba(255, 255, 255, 0.2);
+  left: 0
+  top: 0
+  position: absolute
+
+.current
+  z-index: 100
