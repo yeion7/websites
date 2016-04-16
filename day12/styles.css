@@ -5,7 +5,7 @@ a {
   text-decoration: none;
 }
 body {
-  color: #fff;
+  color: #aaa;
   font-family: sans-serif;
   letter-spacing: 2px;
 }
@@ -49,4 +49,116 @@ header {
   min-height: 400px;
   padding: 15px;
   width: 100%;
+}
+.dados {
+  display: flex;
+}
+[class^="cara"] {
+  background-color: #4682b4;
+  border-radius: 10px;
+  display: flex;
+  height: 120px;
+  margin: 0.5em;
+  width: 120px;
+}
+.columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.punto {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 24px;
+  margin: 0.4em;
+  width: 24px;
+}
+.cara1 {
+  align-items: center;
+  justify-content: center;
+}
+.cara2 {
+  justify-content: space-between;
+}
+.cara2 :last-child {
+  align-self: flex-end;
+}
+.cara3 {
+  justify-content: space-between;
+}
+.cara3 :nth-child(2) {
+  align-self: center;
+}
+.cara3 :last-child {
+  align-self: flex-end;
+}
+.cara4 {
+  justify-content: space-between;
+}
+.cara5 {
+  justify-content: space-between;
+}
+.cara5 :nth-child(2) {
+  align-self: center;
+}
+.cara6 {
+  justify-content: space-between;
+}
+.button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 1.5em;
+  user-select: none;
+}
+.button:hover {
+  background: #ccc;
+  color: #fff;
+}
+.shake {
+  animation: shake 0.2s infinite;
+}
+@-moz-keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+@-webkit-keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+@-o-keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
 }
