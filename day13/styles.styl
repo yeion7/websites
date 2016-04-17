@@ -40,11 +40,70 @@ header
       color: orange
 
 .app
-  align-items: center
   display: flex
   flex-direction: column
-  justify-content: space-around
-  min-height: 50vh
-  min-height: 400px
+  justify-content: space-between;
   padding: 15px
   width: 100%
+
+.game
+  display: flex
+  justify-content: space-between;
+
+.title
+  border-bottom: 1px solid #ccc
+  margin-bottom: 30px
+
+.computer
+.user
+  width: 40%
+
+.middle
+  align-self: center
+  display: flex
+  justify-content: center
+  width: 20%
+
+.text
+  text-align: center
+
+.computer-image
+.user-image
+  width: 50%
+  height: auto
+  max-height: 50%
+
+.computer-image
+  text-align: right
+
+.options
+  display: flex
+  justify-content: space-around
+  margin-top: 50px
+
+.option
+  background: 0
+  border 1px solid #ccc
+  border-radius: 5px
+  color: inherit
+  cursor: pointer
+  font-size: 1.1em
+  font-weight: bold
+  padding: 1em
+
+  &:hover
+    background: #ccc
+    color: white
+
+.shake
+  animation: shake .3s infinite
+
+@keyframes shake
+  0%
+    transform: translateY(0px)
+
+  50%
+    transform: translateY(5px)
+
+  100%
+    transform: translateY(-5px)
