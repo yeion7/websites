@@ -47,3 +47,109 @@ header
   min-height: 300px
   padding: 15px
   width: 100%
+
+.boxes
+  display: flex
+  justify-content: center
+  width: 100%
+
+.box
+  border: 1px solid #ccc
+  cursor: pointer
+  height: 40px
+  width: 40px
+
+  &:hover
+    box-shadow: 0px 0px 39px 0px rgba(255, 255, 255, 1)
+    filter: brightness(.9)
+    z-index: 10
+
+  @media screen and (min-width: 769px) {
+    height: 100px
+    width: 100px
+  }
+
+@keyframes down
+  0%
+    transform: scale(.8)
+
+  40%
+    transform: translateY(1000px)
+
+  79%
+    display: none
+
+  80%
+    height: 0
+    position: initial
+
+  100%
+    height: initial
+
+
+@keyframes gusano
+  0%
+    transform: scale(.8)
+    height: 100px
+
+  40%
+    transform: translateY(500px)
+
+  60%
+    height: 60px
+    transform: translateY(400px);
+
+  80%
+    height: 100px
+    transform: translateY(300px);
+
+  90%
+    height: 60px
+    transform: translateY(100px);
+
+@keyframes large
+  0%
+    height: 1000px
+
+  40%
+    transform: translateY(1000px);
+    height: 100px
+
+  70%
+    transform: translateY(400px);
+
+  80%
+    transform: translateY(300px);
+
+  90%
+    transform: translateY(100px);
+
+@keyframes move
+  0%
+    height: 1000px
+
+  40%
+    transform: translateY(1000px);
+    height: 100px
+
+  70%
+    transform: translateY(400px);
+
+  80%
+    transform: translateY(300px);
+
+  90%
+    transform: translateY(100px);
+
+
+.move
+  animation-duration: 3s
+  animation-name: move
+
+.large
+  animation-duration: 3s
+  animation-name: large
+
+.gusano
+  animation-duration: 3s
+  animation-name: gusano
