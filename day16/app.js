@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
     mouseY = e.pageY;
   });
 
-  document.addEventListener('touchmove', function (e) {
+  container.addEventListener('touchmove', function (e) {
     e.preventDefault();
-
-    mouseX = e.pageX;
-    mouseY = e.pageY;
-  }, false);
+    console.log(e.changedTouches[0].pageX);
+    mouseX = e.changedTouches[0].pageX;
+    mouseY = e.changedTouches[0].pageY;
+  });
 
   for (var i = 0; i < 20; i++) {
     moveDiv('#spot' + i, randomInt(8, 50));
