@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  color: #aaa;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+header {
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  width: 100%;
+}
+.home {
+  color: inherit;
+  font-weight: bold;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.nav {
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  width: 100%;
+}
+.nav a {
+  color: inherit;
+  font-weight: bold;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #ffa500;
+}
+.app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+  padding: 15px;
+  width: 100%;
+}
+.hiden {
+  display: none;
+}
+.text {
+  text-align: center;
+}
+.button {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  padding: 0.3em 0.5em;
+}
+.button:hover {
+  background: #ccc;
+  color: #fff;
+}
+.input-data {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+@media screen and (min-width: 769px) {
+  .input-data {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+.input-data div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+p {
+  text-align: center;
+}
