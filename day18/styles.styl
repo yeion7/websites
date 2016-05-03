@@ -44,7 +44,107 @@ header
   align-items: center
   display: flex
   flex-direction: column
+  height: 800px
   justify-content: space-between;
   min-height: 300px
   padding: 15px
   width: 100%
+
+.shapes-container
+  align-self: flex-start
+  height: 800px
+  position: relative
+  width: 250px
+
+.block
+  cursor: pointer
+  position: absolute
+
+.draggable
+  filter: brightness(.9)
+  z-index: 10
+
+.triright
+  border-bottom: 60px solid #676690
+  border-left: 60px solid transparent
+
+.trileft
+  border-bottom: 60px solid #7F9D39
+  border-right: 60px solid transparent
+  top: 80px
+  left: 20px
+
+.triup
+  border-bottom: 50px solid #EDC951
+  border-left: 40px solid transparent
+  border-right: 40px solid transparent
+  top: 180px
+  left: 20px
+
+.square
+  background: #2E70FF
+  height: 60px
+  width: 60px
+  top: 100px
+  left: 120px
+
+.rectupL
+  background: #CC333F
+  height: 120px
+  width: 30px
+  top: 200px
+  left: 120px
+
+.rectdown
+  width: 120px
+  height: 30px
+  background: #EB6841
+  top: 350px
+  left: 80px
+
+.rectup
+  background: #6A4A3C
+  height: 70px
+  width: 40px
+  top: 400px
+  left: 120px
+
+.circle
+  background: #00A0B0
+  border-radius: 50%
+  height: 50px
+  width: 50px
+  top: 480px
+  left: 120px
+
+.semitop
+  background-color: #3B45A6
+  border-radius: 80px 80px 0 0
+  height: 40px
+  width: 80px
+  top: 250px
+  left: 20px
+
+.quartleft
+  background-color: #FB5A69
+  border-radius: 80px 0 0 0
+  height: 40px
+  width: 40px
+  top: 320px
+  left: 20px
+
+.paraleft
+  background-color: #D48317
+  height: 40px
+  transform: skew(25deg)
+  width: 60px
+  top: 400px
+  left: 20px
+
+.pararight
+  background-color: #452159
+  height: 40px
+  transform: skew(-25deg)
+  width: 60px
+  top: 480px
+  left: 20px
