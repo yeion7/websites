@@ -47,4 +47,23 @@ header
   justify-content: flex-start;
   min-height: 300px
   padding: 15px
+  position: relative
   width: 100%
+
+.dot
+  position: absolute
+  width: 30px
+  height: 30px
+  animation-name: push
+  animation-duration: 1s
+
+@keyframes push
+  0%
+    display: block
+
+  50%
+    transform: scale(3)
+    opacity: .4
+
+  90%
+    display: none

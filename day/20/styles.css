@@ -10,11 +10,20 @@ body {
   letter-spacing: 2px;
 }
 header {
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   height: 30px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
 .home {
@@ -24,11 +33,20 @@ header {
   text-decoration: none;
 }
 .nav {
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   height: 30px;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
 }
 .nav a {
@@ -41,23 +59,60 @@ header {
   color: #ffa500;
 }
 .app {
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   min-height: 300px;
   padding: 15px;
+  position: relative;
   width: 100%;
 }
-.form-container {
-  align-self: flex-start;
-  color: #333;
+.dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  -webkit-animation-name: push;
+          animation-name: push;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-.option {
-  padding: 5px 0;
+@-webkit-keyframes push {
+  0% {
+    display: block;
+  }
+  50% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0.4;
+  }
+  90% {
+    display: none;
+  }
 }
-.question-container {
-  margin: 30px 0;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
+@keyframes push {
+  0% {
+    display: block;
+  }
+  50% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0.4;
+  }
+  90% {
+    display: none;
+  }
 }
