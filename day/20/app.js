@@ -5,7 +5,7 @@ function getColor() {
 };
 
 function getSize(min, max) {
-  return Math.random() * (max - min) + min;
+  return Math.floor(Math.random() * (max - min) + min);
 }
 
 canvas.addEventListener('click', function (e) {
