@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  color: #aaa;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+header {
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  width: 100%;
+}
+.home {
+  color: inherit;
+  font-weight: bold;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.nav {
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  width: 100%;
+}
+.nav a {
+  color: inherit;
+  font-weight: bold;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #ffa500;
+}
+.button {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 1em;
+}
+.button:hover {
+  background: #ccc;
+  color: #fff;
+}
+.app,
+.intro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 15px;
+  position: relative;
+  width: 90%;
+}
+.intro {
+  position: absolute;
+  text-align: center;
+}
+.text-input {
+  border: 0;
+  background: transparent;
+  height: 100%;
+  line-height: 1.5em;
+  text-align: center;
+  width: 100%;
+  z-index: 12;
+}
+.text-input:focus {
+  outline: 0;
+}
+.counter {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  padding: 25px 0;
+  width: 100%;
+}
+span {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0 5px;
+}
+.hiden {
+  display: none;
+}
