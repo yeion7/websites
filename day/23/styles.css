@@ -40,15 +40,29 @@ header {
 .nav a:hover {
   color: #ffa500;
 }
+.button {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 1em;
+}
+.button:hover {
+  background: #ccc;
+  color: #fff;
+}
 .app {
   align-items: center;
-  background: #333;
-  color: #fff;
   display: flex;
-  height: 500px;
   flex-direction: column;
+  height: 500px;
   justify-content: center;
   padding: 15px;
   position: relative;
   width: 100%;
+}
+.timer span {
+  font-size: 5em;
 }
