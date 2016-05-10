@@ -60,40 +60,53 @@ header {
   flex-direction: column;
   height: 500px;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 15px;
-  position: relative;
-  width: 90%;
-}
-.intro {
-  position: absolute;
-  text-align: center;
-}
-.text-input {
-  border: 0;
-  background: transparent;
-  height: 100%;
-  line-height: 1.5em;
-  text-align: center;
   width: 100%;
-  z-index: 12;
 }
-.text-input:focus {
-  outline: 0;
-}
-.counter {
+.game {
   align-items: center;
   display: flex;
-  font-weight: bold;
-  justify-content: center;
-  padding: 25px 0;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
   width: 100%;
 }
-span {
+.game-options {
+  display: flex;
+  flex-direction: column;
+}
+.game-score,
+.game-word {
+  align-self: flex-end;
+  background: #4682b4;
+  border-radius: 5px 5px 0 0;
   color: #fff;
+  margin: 0;
+  padding: 1em;
+}
+.game-word {
+  border-radius: 5px 0px 5px 5px;
   font-size: 1.5em;
-  font-weight: bold;
-  padding: 0 5px;
+  letter-spacing: 10px;
+  padding: 2em 3em;
+  text-transform: uppercase;
+}
+.game-form {
+  display: flex;
+}
+.game-input,
+.game-submit {
+  background: none;
+  border: 1px solid #ccc;
+  font-size: 1.2em;
+  padding: 1em;
+}
+.game-input {
+  border-radius: 5px 0 0 5px;
+}
+.game-submit {
+  border-radius: 0 5px 5px 0;
 }
 .hiden {
   display: none;
