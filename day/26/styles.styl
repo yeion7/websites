@@ -1,0 +1,64 @@
+*
+  box-sizing: border-box
+
+a
+  text-decoration: none
+body
+  color: #aaa
+  font-family: sans-serif
+  letter-spacing: 2px
+
+header
+  align-items: center
+  border-bottom: 1px solid #ccc
+  display: flex
+  height: 30px
+  justify-content: space-between
+  width: 100%
+
+
+.home
+  color: inherit
+  font-weight: bold
+  margin-left: 10px
+  text-decoration: none
+
+.nav
+  align-items: center
+  border-bottom: 1px solid #ccc
+  display: flex
+  height: 30px
+  justify-content: flex-end
+  width: 100%
+
+  & a
+    color: inherit
+    font-weight: bold
+    margin-left: 10px
+    text-decoration: none
+
+    &:hover
+      color: orange
+
+.button
+  background: none
+  border 1px solid #ccc
+  border-radius: 5px
+  color: inherit
+  cursor: pointer
+  font-weight: bold
+  padding: 1em
+
+  &:hover
+    background: #ccc
+    color: white
+
+.app
+  align-items: center
+  display: flex
+  flex-direction: column
+  height: 500px
+  margin: 0 auto
+  justify-content: flex-start;
+  padding: 15px
+  width: 100%
