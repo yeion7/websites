@@ -83,3 +83,7 @@ a {
 .websites {
   align-items: flex-start;
 }
+.fa-brands{
+  font-size: 1.5em;
+  padding: 2px;
+}
